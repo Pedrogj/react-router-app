@@ -5,12 +5,14 @@ import { RootLayout } from "../components/layout/RootLayout";
 import { NotFoundPage } from "../components/NotFoundPage";
 import { AboutTeamPage } from "../components/AboutTeamPage";
 import { AboutHistoryPage } from "../components/AboutHistoryPage";
+import { ProductPage } from "../components/ProductPage";
 
 export const AppRouter = () => {
   return (
     <Routes>
       <Route path="/" element={<RootLayout />}>
         <Route index element={<HomePage />} />
+        <Route path="products/:id" element={<ProductPage />} />
 
         <Route path="about" element={<AboutPage />}>
           <Route path="team" element={<AboutTeamPage />} />
