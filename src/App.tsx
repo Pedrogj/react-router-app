@@ -1,3 +1,10 @@
+import { BrowserRouter } from "react-router";
+import { AppRouter } from "./AppRouter/AppRouter";
+
 export const App = () => {
-  return <h1>React App</h1>;
+  return (
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
+  );
 };
